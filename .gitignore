@@ -1,0 +1,11 @@
+out*/
+
+*.exe
+*.test
+*.prof
+.DS_Store
+
+dns-magic
+dns-magic-cli
+
+config.toml

@@ -1,0 +1,10 @@
+default_provider = "godaddy:customer1"
+request_timeout = "10s"
+
+[providers."godaddy:customer1"]
+type = "godaddy"
+api_key = "replace-me"
+api_secret = "replace-me"
+base_url = "https://api.godaddy.com"
+shopper_id = ""
+timeout = "10s"
