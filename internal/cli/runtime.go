@@ -6,6 +6,7 @@ import (
 
 	"github.com/mdnmdn/dns-magic/internal/config"
 	"github.com/mdnmdn/dns-magic/internal/providers"
+	"github.com/mdnmdn/dns-magic/internal/providers/cloudflare"
 	"github.com/mdnmdn/dns-magic/internal/providers/godaddy"
 )
 
@@ -17,6 +18,7 @@ type Runtime struct {
 func NewRuntime() *Runtime {
 	registry := providers.NewRegistry()
 	registry.Register("godaddy", godaddy.New)
+	registry.Register("cloudflare", cloudflare.New)
 
 	return &Runtime{
 		ConfigPath: "config.toml",

@@ -31,6 +31,10 @@ Request options are provider-neutral:
 - `DomainListOptions`: `shopper_id`, `statuses`, `status_groups`, `includes`, `limit`, `marker`, `modified_since`
 - `RecordListOptions`: `domain`, optional `type`, optional `name`, optional `shopper_id`, `offset`, `limit`
 
+Current implementations include:
+- `internal/providers/godaddy` for GoDaddy-specific API client and record translation.
+- `internal/providers/cloudflare` for Cloudflare-specific API client and record translation.
+
 The CLI must never construct vendor-specific headers directly. Delegated access is always expressed through request options and resolved by the provider adapter.
 
 ## Output and Models
