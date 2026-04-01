@@ -4,7 +4,7 @@ default:
   @just --list
 
 fmt:
-  gofmt -w cmd/dns-magic/main.go internal/app/app.go internal/cli/*.go internal/config/*.go internal/dns/*.go internal/providers/*.go internal/providers/godaddy/*.go
+  gofmt -w cmd/dns-magic/main.go internal/app/app.go internal/cli/*.go internal/config/*.go internal/dns/*.go internal/providers/*.go internal/providers/godaddy/*.go internal/providers/cloudflare/*.go
 
 test:
   go test ./...

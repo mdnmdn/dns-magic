@@ -15,6 +15,7 @@ type ProviderConfig struct {
 	Type      string   `toml:"type" json:"type" yaml:"type" toon:"type"`
 	APIKey    string   `toml:"api_key" json:"api_key" yaml:"api_key" toon:"api_key"`
 	APISecret string   `toml:"api_secret" json:"api_secret" yaml:"api_secret" toon:"api_secret"`
+	APIToken  string   `toml:"api_token" json:"api_token" yaml:"api_token" toon:"api_token"`
 	BaseURL   string   `toml:"base_url" json:"base_url" yaml:"base_url" toon:"base_url"`
 	ShopperID string   `toml:"shopper_id" json:"shopper_id" yaml:"shopper_id" toon:"shopper_id"`
 	OTE       bool     `toml:"ote" json:"ote" yaml:"ote" toon:"ote"`

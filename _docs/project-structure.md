@@ -11,6 +11,7 @@
 - `internal/dns`: provider-agnostic DNS models and lookup helpers.
 - `internal/providers`: provider interface and shared provider plumbing.
 - `internal/providers/godaddy`: GoDaddy-specific API client and record translation.
+- `internal/providers/cloudflare`: Cloudflare-specific API client and record translation.
 - `internal/output`: output renderers for table, json, yaml, markdown, and toon.
 - `_docs`: project documentation. All design and contributor docs belong here.
 - `config.example.toml`: example config showing provider settings and defaults.
@@ -46,6 +47,11 @@ api_key = "..."
 api_secret = "..."
 base_url = "https://api.godaddy.com"
 shopper_id = ""
+timeout = "10s"
+
+[providers."cloudflare:personal"]
+type = "cloudflare"
+api_token = "..."
 timeout = "10s"
 ```
 
